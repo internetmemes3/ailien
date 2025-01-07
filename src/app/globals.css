@@ -19,3 +19,74 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes twinkle {
+  0% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes shimmer {
+  0% { box-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF; }
+  50% { box-shadow: 0 0 20px #FFF, 0 0 40px #FFF, 0 0 60px #FFF; }
+  100% { box-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF; }
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FFF,
+              0 0 20px #FFF,
+              0 0 30px #FFF;
+}
+
+.star-1 { 
+  animation: twinkle 3s infinite;
+}
+
+.star-2 { 
+  animation: twinkle 3s infinite 1s;
+}
+
+.star-3 { 
+  animation: twinkle 3s infinite 2s;
+}
+
+.star-bling {
+  width: 6px;
+  height: 6px;
+  background: #FFF;
+  animation: blink 4s infinite, shimmer 2s infinite;
+  box-shadow: 0 0 20px #FFF,
+              0 0 40px #FFF,
+              0 0 60px rgba(255, 255, 255, 0.8),
+              0 0 80px rgba(255, 255, 255, 0.6);
+}
+
+.monofett-regular {
+  font-family: "Monofett", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4DA2FF;
+}
+
+.rubik-maze-regular {
+  font-family: "Rubik Maze", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #20C20E;
+}
