@@ -86,10 +86,10 @@ export default function Home() {
                 <br/><br/>
                 Will the Earthlings help and convince Ailien to go to the Earth? 🛸 </p>
                 <div className="flex justify-center mt-4">
-      <a className="rounded-full p-2 " href="https://t.me/ailiensui" target="_blank" rel="noopener noreferrer">
+      <a className="rounded-full p-2 " href="https://t.me/ailienonsui" target="_blank" rel="noopener noreferrer">
          <Image className="transform hover:scale-110 transition duration-300" src="/Telegram.png"  width={40} height={40} alt="telegram-icon" />
        </a>
-       <a className=" p-2 " href="https://x.com/ailiensui" target="_blank" rel="noopener noreferrer">
+       <a className=" p-2 " href="https://x.com/AilienOnSui" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300 " src="/x.png" width={40} height={40} alt="x-icon" />
        </a>
        <a className=" p-2 " href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer">
