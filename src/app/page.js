@@ -95,7 +95,7 @@ export default function Home() {
        <a className=" p-2 " href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300" src="/dex.png" width={40} height={40} alt="x-icon" />
        </a>
-       <a className=" p-2 " href="https://suiai.fun/" target="_blank" rel="noopener noreferrer">
+       <a className=" p-2 " href="https://suiai.fun/pool/0x491191af62a182d6b2da4dad7a5d2053373cc35d7700f41ee125c447e5807715" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300" src="/suiai.png" width={40} height={40} alt="x-icon" />
        </a>
        </div>
