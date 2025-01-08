@@ -1,6 +1,22 @@
+"use client"
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [copied, setCopied] = useState(false);
+  const contractAddress = "0x5a3ccf01052272e4f60a67ccc3911cc8113b072f692b76a484042b67e2c5835d::ailien::AILIEN"; 
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(contractAddress);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); 
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
   const generateStars = (count) => {
     return Array.from({ length: count }, (_, i) => ({
       id: i,
@@ -27,6 +43,18 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0B0B21] bg-cover bg-center relative overflow-hidden" 
          style={{ backgroundImage: "url('/bg.jpg')" }}>
+      <div className="w-full bg-blue-600/80 backdrop-blur-sm py-2 px-4 cursor-pointer hover:bg-blue-700/80 transition-colors relative z-[3]"
+           onClick={copyToClipboard}>
+        <div className="container mx-auto flex items-center justify-center">
+          <p className="text-white text-sm md:text-base text-center font-mono">
+            {contractAddress}
+          </p>
+          <span className="ml-2 text-white text-sm"> 
+            {copied ? '✓ ' : ''}
+          </span>
+        </div>
+      </div>
+
       <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="absolute inset-0 z-[1]">
@@ -86,16 +114,16 @@ export default function Home() {
                 <br/><br/>
                 Will the Earthlings help and convince Ailien to go to the Earth? 🛸 </p>
                 <div className="flex justify-center mt-4">
-      <a className="rounded-full p-2 " href="https://t.me/ailienonsui" target="_blank" rel="noopener noreferrer">
+      <a className="rounded-full p-2 " href="https://t.me/ailiensui" target="_blank" rel="noopener noreferrer">
          <Image className="transform hover:scale-110 transition duration-300" src="/Telegram.png"  width={40} height={40} alt="telegram-icon" />
        </a>
-       <a className=" p-2 " href="https://x.com/AilienOnSui" target="_blank" rel="noopener noreferrer">
+       <a className=" p-2 " href="https://x.com/ailiensui" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300 " src="/x.png" width={40} height={40} alt="x-icon" />
        </a>
        <a className=" p-2 " href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300" src="/dex.png" width={40} height={40} alt="x-icon" />
        </a>
-       <a className=" p-2 " href="https://suiai.fun/pool/0x491191af62a182d6b2da4dad7a5d2053373cc35d7700f41ee125c447e5807715" target="_blank" rel="noopener noreferrer">
+       <a className=" p-2 " href="https://suiai.fun/" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300" src="/suiai.png" width={40} height={40} alt="x-icon" />
        </a>
        </div>
