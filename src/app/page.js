@@ -114,16 +114,16 @@ export default function Home() {
                 <br/><br/>
                 Will the Earthlings help and convince Ailien to go to the Earth? 🛸 </p>
                 <div className="flex justify-center mt-4">
-      <a className="rounded-full p-2 " href="https://t.me/ailiensui" target="_blank" rel="noopener noreferrer">
+      <a className="rounded-full p-2 " href="https://t.me/ailienonsuiai" target="_blank" rel="noopener noreferrer">
          <Image className="transform hover:scale-110 transition duration-300" src="/Telegram.png"  width={40} height={40} alt="telegram-icon" />
        </a>
-       <a className=" p-2 " href="https://x.com/ailiensui" target="_blank" rel="noopener noreferrer">
+       <a className=" p-2 " href="https://x.com/ailienonsui" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300 " src="/x.png" width={40} height={40} alt="x-icon" />
        </a>
        <a className=" p-2 " href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300" src="/dex.png" width={40} height={40} alt="x-icon" />
        </a>
-       <a className=" p-2 " href="https://suiai.fun/" target="_blank" rel="noopener noreferrer">
+       <a className=" p-2 " href="https://suiai.fun/pool/0x491191af62a182d6b2da4dad7a5d2053373cc35d7700f41ee125c447e5807715" target="_blank" rel="noopener noreferrer">
          <Image className="rounded-full transform hover:scale-110 transition duration-300" src="/suiai.png" width={40} height={40} alt="x-icon" />
        </a>
        </div>
