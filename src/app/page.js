@@ -54,7 +54,7 @@ export default function Home() {
           </span>
         </div>
             <a 
-            className="hidden md:block bg-sky-400 hover:bg-sky-500 text-white px-4 py-2 mr-4 rounded-lg items-center justify-center w-40 h-20"
+            className="hidden md:block bg-sky-400 hover:bg-sky-500 text-white px-4 py-2 mr-4 rounded-lg items-center justify-center w-40 h-auto"
             href="https://suiai.fun/pool/0x491191af62a182d6b2da4dad7a5d2053373cc35d7700f41ee125c447e5807715"
             target="_blank"
           >
