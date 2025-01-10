@@ -53,6 +53,13 @@ export default function Home() {
             {copied ? '✓ ' : ''}
           </span>
         </div>
+            <a 
+            className="hidden md:block bg-sky-400 hover:bg-sky-500 text-white px-4 py-2 mr-4 rounded-lg"
+            href="https://suiai.fun/pool/0x491191af62a182d6b2da4dad7a5d2053373cc35d7700f41ee125c447e5807715"
+            target="_blank"
+          >
+            Buy Now
+          </a>
       </div>
 
       <div className="absolute inset-0 bg-black/50"></div>
